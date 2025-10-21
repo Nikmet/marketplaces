@@ -12,11 +12,11 @@ export const MainSection = ({ className }: IMain_SectionProps): React.JSX.Elemen
         <div className={cn("bg-black/70 h-[100vh]", className)}>
             <Container className="relative">
                 {/* Добавить видео */}
-                <div className="absolute inset-0 -z-10">
+                {/* <div className="absolute inset-0 -z-10">
                     <video className="w-full h-full object-cover opacity-40" autoPlay muted loop>
                         <source src="/warehouse.mp4" type="video/mp4" />
                     </video>
-                </div>
+                </div> */}
                 <Header></Header>
                 <div className="h-[80vh] flex items-center  justify-center">
                     <LeadForm />

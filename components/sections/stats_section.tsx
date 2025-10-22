@@ -72,7 +72,7 @@ export const StatsSection = ({ className }: IStatsSectionProps): React.JSX.Eleme
                     </p>
                     <div
                         className={cn(
-                            "w-24 h-1 bg-yellow-400 mx-auto mt-6 rounded-full transition-all duration-1000 delay-500",
+                            "w-24 h-1 bg-green-400 mx-auto mt-6 rounded-full transition-all duration-1000 delay-500",
                             isVisible ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"
                         )}
                     ></div>

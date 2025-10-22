@@ -74,8 +74,8 @@ export const PhotoCarousel = ({ images }: PhotoCarouselProps) => {
                 <button
                     ref={prevRef}
                     className="absolute top-1/2 -left-5 -translate-y-1/2 z-10 
-                    bg-yellow-400 text-black w-10 h-10 rounded-full flex items-center justify-center 
-                    hover:bg-yellow-500 transition shadow-lg cursor-pointer"
+                    bg-green-400 text-black w-10 h-10 rounded-full flex items-center justify-center 
+                    hover:bg-green-500 transition shadow-lg cursor-pointer"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -92,8 +92,8 @@ export const PhotoCarousel = ({ images }: PhotoCarouselProps) => {
                 <button
                     ref={nextRef}
                     className="absolute top-1/2 -right-5 -translate-y-1/2 z-10 
-                    bg-yellow-400 text-black w-10 h-10 rounded-full flex items-center justify-center 
-                    hover:bg-yellow-500 transition shadow-lg cursor-pointer"
+                    bg-green-400 text-black w-10 h-10 rounded-full flex items-center justify-center 
+                    hover:bg-green-500 transition shadow-lg cursor-pointer"
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"

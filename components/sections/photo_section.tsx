@@ -46,7 +46,7 @@ export const PhotoSection = ({ className }: IPhoto_SectionProps): React.JSX.Elem
 
                     <div
                         className={cn(
-                            "w-24 h-1 bg-yellow-400 mx-auto mt-6 rounded-full transition-all duration-1000 delay-300",
+                            "w-24 h-1 bg-green-400 mx-auto mt-6 rounded-full transition-all duration-1000 delay-300",
                             isVisible ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"
                         )}
                     ></div>

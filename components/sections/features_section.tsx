@@ -78,7 +78,7 @@ export const FeaturesSection: React.FC<FeaturesProps> = ({ className = "" }) => 
 
                         <div
                             className={cn(
-                                "w-24 h-1 bg-yellow-400 mx-auto mt-6 rounded-full transition-all duration-1000 delay-300",
+                                "w-24 h-1 bg-green-400 mx-auto mt-6 rounded-full transition-all duration-1000 delay-300",
                                 isVisible ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"
                             )}
                         ></div>
@@ -90,7 +90,7 @@ export const FeaturesSection: React.FC<FeaturesProps> = ({ className = "" }) => 
                             <div
                                 key={index}
                                 className={cn(
-                                    "bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-yellow-400 transition-all duration-500 group hover:shadow-xl",
+                                    "bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-green-400 transition-all duration-500 group hover:shadow-xl",
                                     isVisible ? "animate-in" : "opacity-0"
                                 )}
                                 style={{
@@ -113,7 +113,7 @@ export const FeaturesSection: React.FC<FeaturesProps> = ({ className = "" }) => 
                                 </p>
 
                                 {/* Акцентная полоска */}
-                                <div className="w-12 h-1 bg-yellow-400 mt-4 rounded-full transform transition-all duration-500 group-hover:w-16 group-hover:bg-yellow-500"></div>
+                                <div className="w-12 h-1 bg-green-400 mt-4 rounded-full transform transition-all duration-500 group-hover:w-16 group-hover:bg-green-500"></div>
                             </div>
                         ))}
                     </div>

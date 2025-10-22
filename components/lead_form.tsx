@@ -121,8 +121,8 @@ export const LeadForm = () => {
                             onChange={e => setName(e.target.value)}
                             className={`
                                 px-4 sm:px-5 py-3 sm:py-4 text-base sm:text-lg md:text-xl rounded-lg text-black bg-white 
-                                focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent 
-                                transition-all duration-300 border border-gray-300 hover:border-yellow-400
+                                focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent 
+                                transition-all duration-300 border border-gray-300 hover:border-green-400
                                 h-[52px] sm:h-[60px] md:h-[68px]
                                 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}
                             `}
@@ -150,8 +150,8 @@ export const LeadForm = () => {
                             onChange={e => setPhone(e.target.value)}
                             className={`
                                 px-4 sm:px-5 py-3 sm:py-4 text-base sm:text-lg md:text-xl rounded-lg text-black bg-white 
-                                focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent 
-                                transition-all duration-300 border border-gray-300 hover:border-yellow-400
+                                focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-transparent 
+                                transition-all duration-300 border border-gray-300 hover:border-green-400
                                 h-[52px] sm:h-[60px] md:h-[68px]
                                 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}
                             `}
@@ -177,11 +177,11 @@ export const LeadForm = () => {
                             type="submit"
                             disabled={loading}
                             className={`
-                                flex items-center justify-center gap-2 bg-yellow-400 hover:bg-yellow-500 disabled:bg-yellow-300 
+                                flex items-center justify-center gap-2 bg-green-400 hover:bg-green-500 disabled:bg-green-300
                                 text-black font-semibold px-6 sm:px-8 rounded-lg transition-all duration-500 
                                 disabled:cursor-not-allowed w-full text-base sm:text-lg md:text-xl
                                 h-[52px] sm:h-[60px] md:h-[68px] min-h-[52px]
-                                border-2 border-transparent hover:border-yellow-600 hover:shadow-lg
+                                border-2 border-transparent hover:border-green-400 hover:shadow-lg
                                 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}
                             `}
                         >

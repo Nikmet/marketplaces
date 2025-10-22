@@ -68,7 +68,7 @@ export const HowItWorks = ({ className }: IHowItWorksProps): React.JSX.Element =
                     </h2>
                     <div
                         className={cn(
-                            "w-24 h-1 bg-yellow-400 mx-auto rounded-full transition-all duration-1000 delay-300",
+                            "w-24 h-1 bg-green-400 mx-auto rounded-full transition-all duration-1000 delay-300",
                             isVisible ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"
                         )}
                     ></div>
@@ -90,7 +90,7 @@ export const HowItWorks = ({ className }: IHowItWorksProps): React.JSX.Element =
                             {/* Левая часть - номер и иконка */}
                             <div className="flex items-center lg:block lg:text-center mb-4 lg:mb-0 lg:mr-8">
                                 <div className="relative">
-                                    <div className="w-20 h-20 bg-yellow-400 rounded-full flex items-center justify-center text-2xl font-bold text-gray-900 shadow-lg">
+                                    <div className="w-20 h-20 bg-green-300 rounded-full flex items-center justify-center text-2xl font-bold text-gray-900 shadow-lg">
                                         {step.number}
                                     </div>
                                     <div className="absolute -top-1 -right-1 text-2xl bg-white rounded-full p-1 shadow-md">
@@ -101,7 +101,7 @@ export const HowItWorks = ({ className }: IHowItWorksProps): React.JSX.Element =
                                 {index < steps.length - 1 && (
                                     <div
                                         className={cn(
-                                            "hidden lg:block w-1 h-24 bg-yellow-400 mx-auto mt-4 rounded-full transition-all duration-1000 delay-700",
+                                            "hidden lg:block w-1 h-24 bg-green-300 mx-auto mt-4 rounded-full transition-all duration-1000 delay-700",
                                             isVisible ? "opacity-100" : "opacity-0"
                                         )}
                                     ></div>
@@ -110,7 +110,7 @@ export const HowItWorks = ({ className }: IHowItWorksProps): React.JSX.Element =
 
                             {/* Правая часть - контент */}
                             <div className="flex-1 bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 group hover:-translate-y-1">
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-yellow-600 transition-colors">
+                                <h3 className="text-2xl font-bold text-gray-900 mb-4 group-hover:text-green-600 transition-colors">
                                     {step.title}
                                 </h3>
                                 <p className="text-gray-600 leading-relaxed text-lg">{step.description}</p>

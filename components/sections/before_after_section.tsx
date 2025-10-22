@@ -66,7 +66,7 @@ export const BeforeAfterSection = ({ className }: IBeforeAfterProps): React.JSX.
                 {/* Заголовок секции */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">До и после нашего фулфилмента</h2>
-                    <div className="w-24 h-1 bg-yellow-400 mx-auto rounded-full"></div>
+                    <div className="w-24 h-1 bg-green-400 mx-auto rounded-full"></div>
                 </div>
 
                 {/* Слайдер до/после */}
@@ -103,12 +103,12 @@ export const BeforeAfterSection = ({ className }: IBeforeAfterProps): React.JSX.
 
                             {/* Ползунок */}
                             <div
-                                className="absolute top-0 bottom-0 w-1 bg-yellow-400 cursor-grab active:cursor-grabbing flex items-center justify-center transform -translate-x-1/2 transition-transform duration-100 hover:scale-110"
+                                className="absolute top-0 bottom-0 w-1 bg-green-400 cursor-grab active:cursor-grabbing flex items-center justify-center transform -translate-x-1/2 transition-transform duration-100 hover:scale-110"
                                 style={{ left: `${sliderPosition}%` }}
                                 onMouseDown={handleMouseDown}
                                 onTouchStart={handleMouseDown}
                             >
-                                <div className="w-8 h-8 bg-yellow-400 rounded-full shadow-lg flex items-center justify-center border-2 border-white">
+                                <div className="w-8 h-8 bg-green-400 rounded-full shadow-lg flex items-center justify-center border-2 border-white">
                                     <div className="flex space-x-1">
                                         <div className="w-1 h-3 bg-white"></div>
                                         <div className="w-1 h-3 bg-white"></div>

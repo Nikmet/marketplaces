@@ -41,13 +41,10 @@ export const Header = ({ className = "" }: IHeaderProps) => {
                 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}
             `}
             >
-                <Image
-                    src="/logo.png"
-                    alt="GO Fulfillment"
-                    width={80}
-                    height={40}
-                    priority
-                    className="w-16 sm:w-20 md:w-24"
+                <img
+                    src="/logo.svg"
+                    alt="MarketFull"
+                    className="w-30 sm:w-34 md:w-32 lg:w-40" // Увеличил размеры
                 />
             </div>
 
@@ -61,18 +58,18 @@ export const Header = ({ className = "" }: IHeaderProps) => {
                 {/* Контакты */}
                 <div className="flex flex-col text-right leading-tight">
                     <div className="flex gap-4 justify-end mb-1">
-                        <a href="tel:+74954323015" className="font-bold hover:text-yellow-400 transition">
+                        <a href="tel:+74954323015" className="font-bold hover:text-green-400 transition">
                             +7 (495) 432-30-15
                         </a>
-                        <a href="tel:+79855896455" className="font-bold hover:text-yellow-400 transition">
+                        <a href="tel:+79855896455" className="font-bold hover:text-green-400 transition">
                             +7 (985) 589-64-55
                         </a>
                     </div>
                     <div className="flex items-center gap-3 text-sm text-gray-300">
                         <p>Ежедневно: с 9:00 до 22:00</p>
                         <span>•</span>
-                        <a href="mailto:info@fulfilment-go.ru" className="hover:text-yellow-400 transition">
-                            info@fulfilment-go.ru
+                        <a href="mailto:info@marketfull.ru" className="hover:text-green-400 transition">
+                            info@marketfull.ru
                         </a>
                     </div>
                 </div>
@@ -80,7 +77,7 @@ export const Header = ({ className = "" }: IHeaderProps) => {
                 {/* Кнопка */}
                 <button
                     className={`
-                    bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 px-6 rounded-md transition whitespace-nowrap
+                    bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-md whitespace-nowrap
                     transform transition-all duration-300 hover:scale-105
                 `}
                 >
@@ -97,7 +94,7 @@ export const Header = ({ className = "" }: IHeaderProps) => {
             >
                 <button
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    className="p-2 hover:bg-white hover:bg-opacity-10 rounded-md transition duration-300"
+                    className="p-2 "
                     aria-label="Открыть меню"
                 >
                     <div className="w-6 h-6 flex flex-col justify-center gap-1.5 relative">
@@ -146,10 +143,14 @@ export const Header = ({ className = "" }: IHeaderProps) => {
                 >
                     {/* Заголовок меню */}
                     <div className="flex items-center justify-between p-6 border-b border-gray-200">
-                        <Image src="/logo.png" alt="GO Fulfillment" width={60} height={30} className="w-12" />
+                        <img
+                            src="/logo_dark.svg"
+                            alt="MarketFull"
+                            className="w-30 sm:w-34 md:w-32 lg:w-40" // Увеличил размеры
+                        />
                         <button
                             onClick={() => setIsMenuOpen(false)}
-                            className="p-2 hover:bg-gray-100 rounded-md transition duration-300"
+                            className="p-2 rounded-md transition duration-300"
                             aria-label="Закрыть меню"
                         >
                             <div className="w-5 h-5 relative">
@@ -167,16 +168,16 @@ export const Header = ({ className = "" }: IHeaderProps) => {
                             <div className="space-y-3">
                                 <a
                                     href="tel:+74954323015"
-                                    className="flex items-center gap-3 font-bold hover:text-yellow-600 transition duration-300 text-lg group"
+                                    className="flex items-center gap-3 font-bold hover:text-green-500 transition duration-300 text-lg group"
                                 >
-                                    <span className="w-2 h-2 bg-yellow-400 rounded-full group-hover:scale-125 transition-transform duration-300"></span>
+                                    <span className="w-2 h-2 bg-green-500 rounded-full group-hover:scale-125 transition-transform duration-300"></span>
                                     +7 (495) 432-30-15
                                 </a>
                                 <a
                                     href="tel:+79855896455"
-                                    className="flex items-center gap-3 font-bold hover:text-yellow-600 transition duration-300 text-lg group"
+                                    className="flex items-center gap-3 font-bold hover:text-green-500 transition duration-300 text-lg group"
                                 >
-                                    <span className="w-2 h-2 bg-yellow-400 rounded-full group-hover:scale-125 transition-transform duration-300"></span>
+                                    <span className="w-2 h-2 bg-green-500 rounded-full group-hover:scale-125 transition-transform duration-300"></span>
                                     +7 (985) 589-64-55
                                 </a>
                             </div>
@@ -186,18 +187,18 @@ export const Header = ({ className = "" }: IHeaderProps) => {
                                     Ежедневно: с 9:00 до 22:00
                                 </p>
                                 <a
-                                    href="mailto:info@fulfilment-go.ru"
-                                    className="text-sm hover:text-yellow-600 transition duration-300 flex items-center gap-2"
+                                    href="mailto:info@marketfull.ru"
+                                    className="text-sm hover:text-green-500 transition duration-300 flex items-center gap-2"
                                 >
                                     <span className="w-1 h-1 bg-gray-400 rounded-full"></span>
-                                    info@fulfilment-go.ru
+                                    info@marketfull.ru
                                 </a>
                             </div>
                         </div>
 
                         {/* Кнопка */}
                         <button
-                            className="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-4 px-6 rounded-md transition duration-300 transform hover:scale-105 active:scale-95 shadow-lg"
+                            className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-md transition duration-300 transform hover:scale-105 active:scale-95 shadow-lg"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             Бесплатная консультация

@@ -57,7 +57,7 @@ export const CarouselSection = ({ className }: ICarousel_SectionProps): React.JS
                     {/* Анимированная линия */}
                     <div
                         className={cn(
-                            "w-24 h-1 bg-gradient-to-r from-yellow-400 to-yellow-500 mx-auto mt-6 rounded-full transition-all duration-1000 delay-500",
+                            "w-24 h-1 bg-gradient-to-r from-green-400 to-green-500 mx-auto mt-6 rounded-full transition-all duration-1000 delay-500",
                             isVisible ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"
                         )}
                     ></div>

@@ -52,7 +52,7 @@ export const AboutSection: React.FC<FulfillmentProps> = ({ className = "" }) => 
                         {/* Декоративная линия */}
                         <div
                             className={cn(
-                                "w-24 h-1 bg-yellow-400 mx-auto mt-6 rounded-full transition-all duration-1000 delay-300",
+                                "w-24 h-1 bg-green-400 mx-auto mt-6 rounded-full transition-all duration-1000 delay-300",
                                 isVisible ? "opacity-100 scale-x-100" : "opacity-0 scale-x-0"
                             )}
                         ></div>
@@ -61,7 +61,7 @@ export const AboutSection: React.FC<FulfillmentProps> = ({ className = "" }) => 
                     {/* Вводный текст */}
                     <section className="mb-8">
                         <p className="text-lg text-gray-700 leading-relaxed">
-                            <strong className="bg-yellow-400 px-1 transition-all duration-500 delay-300 hover:scale-105 hover:-rotate-1 transform inline-block">
+                            <strong className="bg-green-400 px-1 transition-all duration-500 delay-300 hover:scale-105 hover:-rotate-1 transform inline-block">
                                 Фулфилмент
                             </strong>{" "}
                             (fulfillment, «воплощение заказа») простыми словами — это комплекс логистических услуг
@@ -97,7 +97,7 @@ export const AboutSection: React.FC<FulfillmentProps> = ({ className = "" }) => 
                                         transform: isVisible ? "translateX(0)" : "translateX(-20px)"
                                     }}
                                 >
-                                    <span className="bg-yellow-400 w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0 transform transition-all duration-300 hover:scale-125"></span>
+                                    <span className="bg-green-400 w-2 h-2 rounded-full mt-2 mr-3 flex-shrink-0 transform transition-all duration-300 hover:scale-125"></span>
                                     <span>{service}</span>
                                 </li>
                             ))}

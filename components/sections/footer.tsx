@@ -39,13 +39,10 @@ export const Footer = ({ className = "" }: IFooterProps) => {
                         ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}
                     `}
                     >
-                        <Image
-                            src="/logo.png"
-                            alt="GO Fulfillment"
-                            width={120}
-                            height={60}
-                            priority
-                            className="w-20 sm:w-24 md:w-28 mb-4"
+                        <img
+                            src="/logo.svg"
+                            alt="MarketFull"
+                            className="w-30 sm:w-34 md:w-32 lg:w-40 mb-4" // Увеличил размеры
                         />
                         <p className="text-gray-300 max-w-md text-sm md:text-base">
                             Профессиональный фулфилмент для маркетплейсов. Полный цикл услуг от приемки до отправки
@@ -60,20 +57,20 @@ export const Footer = ({ className = "" }: IFooterProps) => {
                         ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}
                     `}
                     >
-                        <h3 className="text-lg font-semibold mb-4 text-yellow-400">Контакты</h3>
+                        <h3 className="text-lg font-semibold mb-4 text-green-400">Контакты</h3>
                         <div className="space-y-2">
                             <div className="flex gap-4 justify-center">
-                                <a href="tel:+74954323015" className="font-bold hover:text-yellow-400 transition">
+                                <a href="tel:+74954323015" className="font-bold hover:text-green-400 transition">
                                     +7 (495) 432-30-15
                                 </a>
-                                <a href="tel:+79855896455" className="font-bold hover:text-yellow-400 transition">
+                                <a href="tel:+79855896455" className="font-bold hover:text-green-400 transition">
                                     +7 (985) 589-64-55
                                 </a>
                             </div>
                             <div className="flex flex-col sm:flex-row items-center gap-2 text-sm text-gray-300">
                                 <p>Ежедневно: с 9:00 до 22:00</p>
                                 <span className="hidden sm:inline">•</span>
-                                <a href="mailto:info@fulfilment-go.ru" className="hover:text-yellow-400 transition">
+                                <a href="mailto:info@fulfilment-go.ru" className="hover:text-green-400 transition">
                                     info@fulfilment-go.ru
                                 </a>
                             </div>
@@ -89,7 +86,7 @@ export const Footer = ({ className = "" }: IFooterProps) => {
                     >
                         <button
                             className={`
-                            bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-8 rounded-md transition whitespace-nowrap
+                            bg-green-400 hover:bg-green-500 text-black font-semibold py-3 px-8 rounded-md whitespace-nowrap
                             transform transition-all duration-300 hover:scale-105 text-lg
                         `}
                         >
@@ -107,7 +104,7 @@ export const Footer = ({ className = "" }: IFooterProps) => {
                     ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}
                 `}
                 >
-                    <p>© {new Date().getFullYear()} GO Fulfillment. Все права защищены.</p>
+                    <p>© {new Date().getFullYear()} MarketFul. Все права защищены.</p>
                 </div>
             </div>
         </footer>

@@ -7,18 +7,22 @@ import { PhotoSection } from "@/components/sections/photo_section";
 import { BeforeAfterSection } from "@/components/sections/before_after_section";
 import { StatsSection } from "@/components/sections/stats_section";
 import { Footer } from "@/components/sections/footer";
+import { ServicesSection } from "@/components/sections/services_section";
+import { CTASection } from "@/components/sections/cta_section";
 
 export default function Home() {
     return (
         <div>
             <MainSection />
-            <AboutSection className="bg-gray-100" />
+            <AboutSection className="bg-white" />
+            <ServicesSection className="bg-gray-100" />
             <CarouselSection className="bg-white" />
             <FeaturesSection className="bg-gray-100" />
             <PhotoSection className="bg-white" />
-            <StatsSection />
+            <StatsSection className="bg-gray-100" />
             <HowItWorks className="bg-white" />
             <BeforeAfterSection className="bg-gray-100" />
+            <CTASection className="bg-white" />
             <Footer />
         </div>
     );

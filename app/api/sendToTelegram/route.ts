@@ -3,13 +3,27 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(req: NextRequest): Promise<NextResponse> {
     try {
         // Разбор тела запроса
-        const { name, phone }: { name: string; phone: string } = await req.json();
+        const { name, phone, service }: { name: string; phone: string; service: string } = await req.json();
+
+        // Маппинг значений услуг на читаемые названия
+        const serviceMap: { [key: string]: string } = {
+            "receiving-storage": "Приёмка и хранение",
+            "packaging-labeling": "Упаковка и маркировка",
+            pickup: "Забор товара",
+            shipping: "Отгрузка товара",
+            turnkey: "Под ключ",
+            credit: "Займы/Кредитование для Селлеров" 
+        };
+
+        const serviceName = serviceMap[service] || "Не указана";
 
         const text = `
 📩 Новая заявка с сайта:
+
 👤 Имя: ${name}
-📧 Номер телефона: ${phone}
-`;
+📞 Телефон: ${phone}
+🎯 Услуга: ${serviceName}
+        `.trim();
 
         // Отправка сообщения в Telegram
         const telegramResponse = await fetch(`https://api.telegram.org/bot${process.env.TG_BOT_TOKEN}/sendMessage`, {

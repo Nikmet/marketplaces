@@ -29,6 +29,16 @@ export const Header = ({ className = "" }: IHeaderProps) => {
         return () => observer.disconnect();
     }, []);
 
+    const scrollToCta = () => {
+        const ctaSection = document.getElementById("cta-section");
+        if (ctaSection) {
+            ctaSection.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        }
+    };
+
     return (
         <header
             ref={headerRef}
@@ -76,6 +86,7 @@ export const Header = ({ className = "" }: IHeaderProps) => {
 
                 {/* Кнопка */}
                 <button
+                    onClick={scrollToCta}
                     className={`
                     bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded-md whitespace-nowrap
                     transform transition-all duration-300 hover:scale-105
@@ -92,11 +103,7 @@ export const Header = ({ className = "" }: IHeaderProps) => {
                 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4"}
             `}
             >
-                <button
-                    onClick={() => setIsMenuOpen(!isMenuOpen)}
-                    className="p-2 "
-                    aria-label="Открыть меню"
-                >
+                <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 " aria-label="Открыть меню">
                     <div className="w-6 h-6 flex flex-col justify-center gap-1.5 relative">
                         <span
                             className={`w-full h-0.5 bg-white transition-all duration-300 ${
@@ -199,7 +206,10 @@ export const Header = ({ className = "" }: IHeaderProps) => {
                         {/* Кнопка */}
                         <button
                             className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-md transition duration-300 transform hover:scale-105 active:scale-95 shadow-lg"
-                            onClick={() => setIsMenuOpen(false)}
+                            onClick={() => {
+                                setIsMenuOpen(false);
+                                scrollToCta();
+                            }}
                         >
                             Бесплатная консультация
                         </button>

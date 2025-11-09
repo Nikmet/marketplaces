@@ -9,7 +9,7 @@ export interface IMain_SectionProps {
 
 export const MainSection = ({ className }: IMain_SectionProps): React.JSX.Element => {
     return (
-        <div className={cn("bg-black/70 min-h-[100dvh] relative", className)}>
+        <div className={cn("bg-black/70 min-h-[100dvh] relative", className)} id="main-section">
             {/* Видео фон */}
             <div className="fixed inset-0 -z-10">
                 <video className="w-full h-full object-cover opacity-60" autoPlay muted loop playsInline>

@@ -28,6 +28,16 @@ export const Footer = ({ className = "" }: IFooterProps) => {
         return () => observer.disconnect();
     }, []);
 
+    const scrollToCta = () => {
+        const ctaSection = document.getElementById("cta-section");
+        if (ctaSection) {
+            ctaSection.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+        }
+    };
+
     return (
         <footer ref={footerRef} className={`bg-gray-900 text-white py-12 ${className}`}>
             <div className="container mx-auto px-4 sm:px-6 md:px-8">
@@ -85,6 +95,7 @@ export const Footer = ({ className = "" }: IFooterProps) => {
                     `}
                     >
                         <button
+                            onClick={scrollToCta}
                             className={`
                             bg-green-400 hover:bg-green-500 text-black font-semibold py-3 px-8 rounded-md whitespace-nowrap
                             transform transition-all duration-300 hover:scale-105 text-lg

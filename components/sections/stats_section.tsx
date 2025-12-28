@@ -31,12 +31,12 @@ export const StatsSection = ({ className }: IStatsSectionProps): React.JSX.Eleme
 
     const stats = [
         {
-            value: "С 2022 года",
+            value: "С 2023 года",
             description: "Являемся надежными партнерами",
             accent: true
         },
         {
-            value: "Более 250+",
+            value: "Более 100",
             description: "Действующих партнеров и акуп торговли"
         },
         {
@@ -44,7 +44,7 @@ export const StatsSection = ({ className }: IStatsSectionProps): React.JSX.Eleme
             description: "Клиенты из рейтинга на маркетплейсах"
         },
         {
-            value: "Более 350к.",
+            value: "Более 35к",
             description: "Упаковывается товаров в 1 месяц"
         }
     ];

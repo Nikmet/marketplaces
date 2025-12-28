@@ -70,20 +70,21 @@ export const Footer = ({ className = "" }: IFooterProps) => {
                         <h3 className="text-lg font-semibold mb-4 text-green-400">Контакты</h3>
                         <div className="space-y-2">
                             <div className="flex gap-4 justify-center">
-                                <a href="tel:+74954323015" className="font-bold hover:text-green-400 transition">
-                                    +7 (495) 432-30-15
-                                </a>
-                                <a href="tel:+79855896455" className="font-bold hover:text-green-400 transition">
-                                    +7 (985) 589-64-55
+                                <a href="tel:+79157609026" className="font-bold hover:text-green-400 transition">
+                                    +7 (915) 760-90-26
                                 </a>
                             </div>
-                            <div className="flex flex-col sm:flex-row items-center gap-2 text-sm text-gray-300">
+                            <div>
+                                <p>Адрес офиса:</p>
+                                <p>Владимирская обл., г.Петушки, ул.Вокзальная д.101</p>
+                            </div>
+                            {/* <div className="flex flex-col sm:flex-row items-center gap-2 text-sm text-gray-300">
                                 <p>Ежедневно: с 9:00 до 22:00</p>
                                 <span className="hidden sm:inline">•</span>
                                 <a href="mailto:info@fulfilment-go.ru" className="hover:text-green-400 transition">
                                     info@fulfilment-go.ru
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
 

@@ -68,20 +68,20 @@ export const Header = ({ className = "" }: IHeaderProps) => {
                 {/* Контакты */}
                 <div className="flex flex-col text-right leading-tight">
                     <div className="flex gap-4 justify-end mb-1">
-                        <a href="tel:+74954323015" className="font-bold hover:text-green-400 transition">
-                            +7 (495) 432-30-15
-                        </a>
-                        <a href="tel:+79855896455" className="font-bold hover:text-green-400 transition">
-                            +7 (985) 589-64-55
+                        <a href="tel:+79157609026" className="font-bold hover:text-green-400 transition">
+                            +7 (915) 760-90-26
                         </a>
                     </div>
-                    <div className="flex items-center gap-3 text-sm text-gray-300">
+                    <div>
+                        <p>Контактный телефон менеджера</p>
+                    </div>
+                    {/* <div className="flex items-center gap-3 text-sm text-gray-300">
                         <p>Ежедневно: с 9:00 до 22:00</p>
                         <span>•</span>
                         <a href="mailto:info@marketfull.ru" className="hover:text-green-400 transition">
                             info@marketfull.ru
                         </a>
-                    </div>
+                    </div> */}
                 </div>
 
                 {/* Кнопка */}
@@ -171,24 +171,18 @@ export const Header = ({ className = "" }: IHeaderProps) => {
                     <div className="p-6 space-y-6 text-gray-900">
                         {/* Контакты */}
                         <div className="space-y-4">
-                            <h3 className="font-semibold text-lg text-gray-800">Контакты</h3>
+                            <h3 className="font-semibold text-lg mb-1 text-gray-800">Контактный телефон менеджера</h3>
+                            <p>Позвоните нам или оставьте заявку и мы свяжемся с вами</p>
                             <div className="space-y-3">
                                 <a
-                                    href="tel:+74954323015"
+                                    href="tel:+79157609026"
                                     className="flex items-center gap-3 font-bold hover:text-green-500 transition duration-300 text-lg group"
                                 >
                                     <span className="w-2 h-2 bg-green-500 rounded-full group-hover:scale-125 transition-transform duration-300"></span>
-                                    +7 (495) 432-30-15
-                                </a>
-                                <a
-                                    href="tel:+79855896455"
-                                    className="flex items-center gap-3 font-bold hover:text-green-500 transition duration-300 text-lg group"
-                                >
-                                    <span className="w-2 h-2 bg-green-500 rounded-full group-hover:scale-125 transition-transform duration-300"></span>
-                                    +7 (985) 589-64-55
+                                    +7 (915) 760-90-26
                                 </a>
                             </div>
-                            <div className="space-y-2 pt-2 border-t border-gray-200">
+                            {/* <div className="space-y-2 pt-2 border-t border-gray-200">
                                 <p className="text-sm text-gray-600 flex items-center gap-2">
                                     <span className="w-1 h-1 bg-gray-400 rounded-full"></span>
                                     Ежедневно: с 9:00 до 22:00
@@ -200,7 +194,7 @@ export const Header = ({ className = "" }: IHeaderProps) => {
                                     <span className="w-1 h-1 bg-gray-400 rounded-full"></span>
                                     info@marketfull.ru
                                 </a>
-                            </div>
+                            </div> */}
                         </div>
 
                         {/* Кнопка */}
